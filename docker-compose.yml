@@ -1,0 +1,11 @@
+version: '3'
+services:
+  app:
+    build: ./
+    restart: on-failure
+    ports:
+      - 8080:8080 # Exposing application port from docker container to the outside
+      - 8000:8000 # Debugging purposes
+
+    command: java -agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=*:8000 -jar /springboot-docker-template-0.0.1-SNAPSHOT.jar
+
