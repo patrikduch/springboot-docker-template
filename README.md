@@ -11,3 +11,9 @@ SpringBoot Docker template which is capable of debugging SpringBoot application 
 ```
 build composeUp
 ```
+
+### Debugging
+
+<ul>
+    <li>Remote JVM Debug with 8000 port</li>
+</ul>
